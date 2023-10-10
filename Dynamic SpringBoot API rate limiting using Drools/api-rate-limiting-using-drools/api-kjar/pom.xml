@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.waqasahmed</groupId>
+  <artifactId>api-kjar</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>kjar</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-maven-plugin</artifactId>
+        <version>7.73.0.Final</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+<!--  <build>-->
+<!--    <plugins>-->
+<!--      <plugin>-->
+<!--        <groupId>org.kie</groupId>-->
+<!--        <artifactId>kie-maven-plugin</artifactId>-->
+<!--        <version>7.73.0.Final</version>-->
+<!--        <extensions>true</extensions>-->
+<!--        <dependencies>-->
+<!--          &lt;!&ndash; Add any required dependencies for the kie-maven-plugin here &ndash;&gt;-->
+<!--          &lt;!&ndash; For example, if it depends on 'xmlpull', you can add it here &ndash;&gt;-->
+<!--          <dependency>-->
+<!--            <groupId>xmlpull</groupId>-->
+<!--            <artifactId>xmlpull</artifactId>-->
+<!--            <version>1.2.0</version>-->
+<!--          </dependency>-->
+<!--        </dependencies>-->
+<!--      </plugin>-->
+<!--    </plugins>-->
+<!--  </build>-->
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
+    <dependency>
+      <groupId>jakarta.persistence</groupId>
+      <artifactId>jakarta.persistence-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.drools</groupId>
+      <artifactId>drools-compiler</artifactId>
+      <version>7.73.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-ci</artifactId>
+      <version>7.73.0.Final</version> <!-- Replace with your Drools version -->
+    </dependency>
+    <dependency>
+      <groupId>org.drools</groupId>
+      <artifactId>drools-model-compiler</artifactId>
+      <version>7.73.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.waqasahmed</groupId>
+      <artifactId>api-models</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+  </dependencies>
+
+  <properties>
+    <maven.compiler.source>18</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id>jboss-community-public-repository</id>-->
+<!--      <url>https://repository.jboss.org/nexus/content/repositories/public/</url>-->
+<!--    </repository>-->
+<!--  </repositories>-->
+
+  <repositories>
+    <repository>
+      <id>jboss-public-maven-repository</id>
+      <name>JBoss Public Maven Repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <layout>default</layout>
+    </repository>
+    <repository>
+      <id>redhat-ga-maven-repository</id>
+      <name>Red Hat GA Maven Repository</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jboss-public-maven-repository</id>
+      <name>JBoss Public Maven Repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>redhat-ga-maven-repository</id>
+      <name>Red Hat GA Maven Repository</name>
+      <url>https://maven.repository.redhat.com/ga/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>
