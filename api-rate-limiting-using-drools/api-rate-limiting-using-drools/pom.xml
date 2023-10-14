@@ -36,11 +36,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.kie</groupId>-->
-<!--			<artifactId>kie-api</artifactId>-->
-<!--			<version>9.44.0.Final</version>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-core</artifactId>
@@ -54,13 +49,8 @@
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-ci</artifactId>
-			<version>7.73.0.Final</version> <!-- Replace with your Drools version -->
+			<version>7.73.0.Final</version>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>ch.qos.logback</groupId>-->
-<!--			<artifactId>logback-classic</artifactId>-->
-<!--			<version>1.2.6</version> &lt;!&ndash; Use the latest version &ndash;&gt;-->
-<!--		</dependency>-->
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -68,33 +58,11 @@
 			<version>2.0.0-alpha0</version>
 			<scope>runtime</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>io.waqasahmed</groupId>
-			<artifactId>api-kjar</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
 		<dependency>
 			<groupId>io.waqasahmed</groupId>
 			<artifactId>api-models</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>io.waqasahmed</groupId>-->
-<!--			<artifactId>api-kjar</artifactId>-->
-<!--			<version>1.0-SNAPSHOT</version>-->
-<!--		</dependency>-->
-
-		<!--		<dependency>-->
-<!--			<groupId>org.drools</groupId>-->
-<!--			<artifactId>drools-compiler</artifactId>-->
-<!--			<version>${drools.version}</version>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.drools</groupId>-->
-<!--			<artifactId>drools-decisiontables</artifactId>-->
-<!--			<version>${drools.version}</version>-->
-<!--		</dependency>-->
 	</dependencies>
 
 	<build>
